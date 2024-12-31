@@ -1,7 +1,5 @@
 # vitepress theme blog pure
 
-[Live Demo](https://ti.bi)
-
 ## 动机
 
 一直想找一个架构足够干净的 ssg 程序，hexo,hugo,vuepress,docsify 等各种网上能找的都试了，总有不满意的地方，包括这些程序的主题也没有直接满意的（编程语言不会，功能太多，生成的 html 的文件还有不少插件的残留等）。
@@ -9,18 +7,6 @@
 vitepress 足够轻量，系统干净，博客主题这块又是空白，所以做一个自己满意的博客主题吧，诉求就是功能可以少，但要足够的轻量。
 
 认真来说对比博客程序的话，其实当前的功能更像是线上笔记展示。
-
-**计划中的功能**
--   [ ] 等 vitepress 本身稳定了，就做成 npm package 方式的 theme **keep going**
--   [x] 搜索 - vitepress后来的版本天生本地搜索，对普通人来说比algolia好用，很省心
--   [x] 留言 基于 [utteranc](https://utteranc.es/)
--   [x] 分页?!
-
-**不打算维护的功能**
--   广告 - 一般人用不上
--   上一篇｜下一篇 - 博客文章本来没什么关联性，价值不大
-## changelog
-[changelog](./changelog.md)
 
 ## 使用方法
 
