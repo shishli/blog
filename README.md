@@ -81,25 +81,8 @@ tags:
 
 ```js
 comment: {
-    repo: 'airene/vitepress-blog-pure', //你自己的用户名和仓库名
+    repo: 'shishli/blog', //你自己的用户名和仓库名
     themes: 'github-light',
     issueTerm: 'pathname'
 }
 ```
-
-## 感谢
-
-其实没怎么写过 nodejs,从掘金看到的一篇文章带来的灵感 - [VitePress 极简博客搭建](https://juejin.cn/post/6896382276389732359)
-
-[Moking1997](https://github.com/Moking1997) 开发的比较早，vitepress 的版本还是 0.7.x,现在已经 0.15.x 了，变化还是挺大的，已经不太能通过提 pr 的方式维护了。  
-主要的变化是适配 vitepress 的新版本，主题这块采用的实现思路不一样，并不改动官方默认主题，这样可以实现极少的代码量和为将来能发布成 npm 主题包的做准备。
-
-比如：  
-sidebar 使用 hackcss 的方式实现想要的效果
-
-[Albert26193](https://github.com/Albert26193) 第一个给本project 提pull request的人，虽然没直接合进来，还是感谢。
-
-## License
-
-[MIT](https://opensource.org/licenses/MIT)  
-Copyright (c) 2021-present, Airene
