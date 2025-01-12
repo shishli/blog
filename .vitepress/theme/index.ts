@@ -1,23 +1,24 @@
-import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
-import NewLayout from './components/NewLayout.vue'
-import Archives from './components/Archives.vue'
-import Category from './components/Category.vue'
-import Tags from './components/Tags.vue'
-import Page from './components/Page.vue'
-import Comment from './components/Comment.vue'
+import DefaultTheme from 'vitepress/theme'
 
-import './custom.css'
+
+// 样式入口
+import './styles/index.scss'
+import Layout from './layout/Layout.vue'
+
+/**
+ * 扫描组件
+ */
+const modules = import.meta.glob(['./components/*.vue','./layout/*.vue'], { eager: true, import: 'default' })
 
 export default {
-    ...DefaultTheme,
-    Layout: NewLayout,
-    enhanceApp({ app }) {
-        // register global compoment
-        app.component('Tags', Tags)
-        app.component('Category', Category)
-        app.component('Archives', Archives)
-        app.component('Page', Page)
-        app.component('Comment', Comment)
+    extends: DefaultTheme,
+    Layout,
+    enhanceApp({ app, router, siteData }) {
+        for (const path in modules) {
+            const mod = modules[path]
+            console.log("组件名称：", mod.__name)
+            app.component(mod.__name, mod)
+        }
     }
 } satisfies Theme

@@ -71,18 +71,3 @@ tags:
 
 **其中 title 为必须有的内容，其他随意，推荐含有 date,不然会默认一个当前时间，推荐含有 tags，这样也可以在标签页面显示**
 
-## 评论
-
-目前评论的使用方式并不是很优雅，尝试了几种方式，基于现状也找不到更合适的方式了，这个也可能和 vitepress 的宗旨（并不是 vuepress 的下一代）或者还没到正式版有关系
-
-使用方式是在想开评论的文章最后加一个 `<Comment />`
-
-`.vitepress/config.ts` 这个文件中的 comment 部分换成自己的仓库信息,才能正确的保存评论
-
-```js
-comment: {
-    repo: 'shishli/blog', //你自己的用户名和仓库名
-    themes: 'github-light',
-    issueTerm: 'pathname'
-}
-```

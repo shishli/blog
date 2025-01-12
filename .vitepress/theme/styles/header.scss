@@ -1,0 +1,25 @@
+.layout-header {
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--header-bgcolor);
+    top: 0;
+    z-index: 99;
+    border-bottom-width: 2px;
+    border-color: var(--text-color);
+    &-main {
+        width: var(--main-width);
+        font-size: 0.9rem;
+    }
+    .logo-img,
+    .logo-title {
+        display: inline-block;
+        vertical-align: middle;
+        letter-spacing: 1px;
+    }
+    .logo-img {
+        margin-right: 5px;
+        width: 36px;
+        height: 30px;
+    }
+
+}

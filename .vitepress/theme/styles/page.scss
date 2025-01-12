@@ -1,0 +1,13 @@
+.page {
+    padding-top: 1rem;
+    &-content {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: var(--header-bgcolor);
+        padding: 2rem;
+    }
+}
+
+
+

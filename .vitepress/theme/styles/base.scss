@@ -1,0 +1,184 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--text-color);
+    border: 0 solid;
+    font-weight: 500;
+}
+
+html {
+    /* background: #d2e3f8; */
+    background-image: url('/pattern.svg');
+    background-attachment: fixed;
+    background-size: 250px;
+    font-size: var(--text-size);
+}
+
+body {
+    background-color: rgba(210, 227, 248, 0.75);
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    --bog-text-opacity: 1;
+    color: rgba(31, 41, 55, var(--bog-text-opacity));
+    font-family: Inter, sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+    display: block;
+    vertical-align: middle;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+/*定位*/
+.p-fixed {
+    position: fixed;
+}
+.p-relative {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+}
+
+/*弹性布局*/
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+
+.items-center {
+    align-items: center;
+}
+.items-start {
+    align-items: flex-start;
+}
+.items-end {
+    align-items: flex-end;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-col-rev {
+    flex-direction: column-reverse;
+}
+.flex-row-rev {
+    flex-direction: row-reverse;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+@keyframes react-show-up {
+    0% {
+        opacity: 0;
+        transform: translate3d(0px, 100%, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes react-show-down {
+    0% {
+        opacity: 0;
+        transform: translate3d(0px, -100%, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animation-react-show-up {
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-show-up;
+}
+.animation-react-show-down {
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-show-down;
+}
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .5s;
+}
+
+.transform {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.transform:hover {
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+}
+
+
