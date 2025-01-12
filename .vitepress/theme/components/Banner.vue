@@ -7,7 +7,7 @@
             <h1>BLOGBLOGBLOGBLOGBLOGBLOGBLOGBLOGBLOG</h1>
         </div>
         <div class="flex justify-center home-banner-carlendar">
-            <Heatmap></Heatmap>
+            <!-- <Heatmap></Heatmap> -->
         </div>
     </div>
 </template>

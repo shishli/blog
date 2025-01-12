@@ -9,7 +9,7 @@ const { frontmatter, title } = useData()
 
 <template>
     <div class="home">
-        <Banner></Banner>
+        <!-- <Banner></Banner> -->
         <Search></Search>
         <ul class="flex flex-row wrap home-posts">
             <li
